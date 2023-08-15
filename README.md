@@ -1,2 +1,10 @@
-# translate_bot
-Translate bot uz&lt;->ru&lt;->en
+
+# Translate bot with aiogram
+
+## Usage
+
+```bash
+python3 main.py
+```
+
+## Bot link
