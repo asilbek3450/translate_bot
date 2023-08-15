@@ -14,8 +14,6 @@ contact = KeyboardButton('Telefon raqamni yuborish', request_contact=True)
 contact_keyboard = ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
 contact_keyboard.add(contact, back_button)
 
-
-
 uz_en = InlineKeyboardButton('🇺🇿 uz ➡️ en 🏴󠁧󠁢󠁥󠁮󠁧󠁿', callback_data='uz_en')
 en_uz = InlineKeyboardButton('🏴󠁧󠁢󠁥󠁮󠁧󠁿 en ➡️ uz 🇺🇿', callback_data='en_uz')
 ru_uz = InlineKeyboardButton('🇷🇺 ru ➡️ uz 🇺🇿', callback_data='ru_uz')
@@ -25,4 +23,3 @@ en_ru = InlineKeyboardButton('🏴󠁧󠁢󠁥󠁮󠁧󠁿 en ➡️ ru 🇷🇺
 
 translations = InlineKeyboardMarkup(row_width=2)
 translations.add(uz_en, en_uz, ru_uz, uz_ru, ru_en, en_ru)
-
