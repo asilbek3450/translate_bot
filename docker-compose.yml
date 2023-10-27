@@ -7,3 +7,5 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     container_name: ${BOT_NAME}
+#    env_file:
+#      - .env
