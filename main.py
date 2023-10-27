@@ -1,5 +1,5 @@
 import logging
-
+import requests
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -24,7 +24,6 @@ language = ''
 async def start_bot(message: types.Message):
     await bot.send_message(message.chat.id, f'Assalom aleykum, hurmatli {message.from_user.full_name}\n'
                                             f'Tarjimon botimizga xush kelibsiz!\n', reply_markup=start_keyboards)
-
 
 
 @dp.message_handler(commands=['help'])
@@ -78,8 +77,6 @@ async def info_command(message: types.Message):
 async def stop_command(message: types.Message):
     await bot.send_message(message.chat.id, 'Botni o`chirish uchun /stop ni bosing')
     await bot.send_message(message.chat.id, 'Bot o`chirildi', reply_markup=types.ReplyKeyboardRemove())
-
-
 
 
 # Define the number of buttons per page
