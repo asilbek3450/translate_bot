@@ -9,7 +9,3 @@ services:
     container_name: ${BOT_NAME}
     env_file:
       - .env
-    links:
-      - mongodb
-    depends_on:
-      - mongodb
