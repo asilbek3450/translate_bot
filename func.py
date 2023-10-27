@@ -11,7 +11,7 @@ def translate(q, target, source):
     headers = {
         "content-type": "application/x-www-form-urlencoded",
         "Accept-Encoding": "application/gzip",
-        "X-RapidAPI-Key": "0e1e80d5bfmsh213ed89c8e67ef5p10d6b3jsn0c4cbb51f1b1",
+        "X-RapidAPI-Key": "0be29fa1c1msha32456cb3243efbp11a1c9jsna78218136690",
         "X-RapidAPI-Host": "google-translate1.p.rapidapi.com"
     }
     response = requests.post(url, data=payload, headers=headers)
