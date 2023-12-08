@@ -4,4 +4,4 @@ translator = Translator()
 
 
 def translate(q, target, source):
-    return translator.translate(q, dest=target, src=source).text
+    return translator.translate(text=q, dest=target, src=source).text
