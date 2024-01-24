@@ -156,8 +156,8 @@ async def translation(message: types.Message):
     language_combination = language
 
     if language_combination in language_mappings:
-        translation_target, translation_source = language_mappings[language_combination]
-        translation_result = translate(message.text, translation_source, translation_target)
+        translation_source, translation_target = language_mappings[language_combination]
+        translation_result = translate(message.text, translation_target, translation_source)
         await bot.send_message(message.chat.id, translation_result, reply_markup=start_keyboards)
 
     # else:

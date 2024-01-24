@@ -19,8 +19,5 @@ WORKDIR /app
 COPY --from=builder /app/wheels /wheels
 COPY --from=builder /app/requirements.txt .
 
-RUN pip install --no-cache /wheels/*
-
-COPY . .
 
 CMD ["python", "-u", "main.py"]
